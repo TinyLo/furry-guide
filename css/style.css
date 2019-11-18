@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold.ttf");
+    src: url("../fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+    src: url("../fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+ul,
+li,
+button,
+input {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header, footer {
+    padding: 0 20px;
+}
+
+/*Header*/
+
+.page-header {
+    background-image: url("../images/img/football_767.jpg");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .page-header::after {
+    content: "";
+    background-color: #000000;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+.header-logo {
+    display: inline-block;
+    height: 36px;
+    margin-top: 33px;
+}
+
+.header-logo svg {
+    height: 36px;
+    fill: #ffffff;
+}
+
+.header-title {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    text-transform: uppercase;
+    /* width: 100%; */
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.header-title-item {
+    /* display: inline-block; */
+}
+
+.header-buttons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* .header-title-item:last-child {
+    text-align: right;
+} */
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button span {
+    margin-left: 9px;
+    width: 80px;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+
+.btn-apple, .btn-google {
+    background-color: #5e42b0;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    width: 280px;
+    height: 36px;
+    font-size: 8px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+}
+
+.btn-apple svg {
+    height: 25px;
+    fill: #ffffff;
+}
+
+.btn-google svg {
+    height: 25px;
+    fill: #ffffff;
+}
+
+
+
+
+/*main*/
+
+.page-content-article {
+    height: 200px;
+    padding: 0 20px;
+}
+
+.page-content-article.first {
+    background-color: #fafafa;
+}
+
+.page-content-article.second {
+    background-color: #f5f4f9;
+}
+
+.page-content-article.third {
+    background-color: #5e42b0;
+}
+
+.page-content-article.third.dark {
+    background-color: #090c35;
+}
+
+
+.article-title {
+    display: flex;
+    align-items: center;
+}
+
+.article-title .article-number {
+    color: #000;
+    margin-right: 7px;
+}
+
+.article-title h3 {
+   color: #c1c1c1;
+   text-transform: uppercase;
+}
+
+h2 {
+    color: #e7e7e7;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 60px;
+    margin-top: 24px;
+}
+
+.first-content-item-image {
+    position: relative;
+    margin: 20px 58px 28px 70px;
+}
+
+h3 {
+    color: #c1c1c1;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.article-number {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.content-text-block {
+    display: block;
+    height: 215px;
+    width: 320px;
+}
+
+
+
+
