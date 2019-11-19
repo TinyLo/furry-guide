@@ -142,8 +142,10 @@ button span {
 /*main*/
 
 .page-content-article {
-    height: 200px;
+    height: 250px;
     padding: 0 20px;
+
+    
 }
 
 .page-content-article.first {
