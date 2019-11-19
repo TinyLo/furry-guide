@@ -34,6 +34,58 @@ input {
     box-sizing: border-box;
 }
 
+@media (min-width: 961px) and (max-width: 1920px) {
+    /*Desktop Screens*/
+
+    header.page-header {
+        background-image: url("../images/img/football_1920.jpg");  
+    }
+
+    footer.page-footer {
+        background-image: url("../images/img/game_1920.jpg");  
+    }
+
+    header .text-logo {
+        height: 45px;
+        margin: 33px 0;
+    }
+
+    .header-title {
+        font-size: 90px;
+    }
+
+    .app-links {
+        margin-bottom: 110px;
+    }
+
+    .app-link:not(:last-child) {
+        margin-right: 51px;
+    }
+
+    .app-links .app-link {
+        height: 77px;
+        width: 311px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .app-links .app-link svg {
+        height: 48px;
+    }
+
+    .app-links .app-link span {
+        margin-left: 26px;
+    }
+  }
+  
+@media (max-width: 640px) {
+     /*Mobile Screens*/
+
+    .header-title {
+        font-size: 28px;
+    }
+  }
+  
 header, footer {
     padding: 0 20px;
 }
@@ -41,16 +93,15 @@ header, footer {
 /*Header*/
 
 .page-header {
-    background-image: url("../images/img/football_767.jpg");
-    position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
+    height: 100vh;
+    background-image: url("../images/img/football_767.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 /* .page-header::after {
@@ -64,88 +115,67 @@ header, footer {
     bottom: 0;
 } */
 
-.header-logo {
+.text-logo {
     display: inline-block;
     height: 36px;
-    margin-top: 33px;
+    margin: 33px 0;
 }
 
-.header-logo svg {
-    height: 36px;
+.text-logo svg {
+    height: 100%;
     fill: #ffffff;
 }
 
 .header-title {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
     text-transform: uppercase;
-    /* width: 100%; */
     color: #ffffff;
     font-weight: 700;
-    font-size: 28px;
 }
 
-.header-title-item {
-    /* display: inline-block; */
-}
 
-.header-buttons {
+.app-links {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 84px;
 }
 
-/* .header-title-item:last-child {
-    text-align: right;
-} */
-
-button {
+.app-link {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-button span {
-    margin-left: 9px;
-    width: 80px;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-
-.btn-apple, .btn-google {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
     background-color: #5e42b0;
     color: #ffffff;
-    border: none;
-    text-align: center;
-    width: 280px;
-    height: 36px;
+    min-width: 280px;
+    height: 35px;
     font-size: 8px;
-    border-radius: 50px;
+    border-radius: 38px;
     margin-bottom: 14px;
-    text-transform: uppercase;
 }
 
-.btn-apple svg {
+.app-link svg {
     height: 25px;
     fill: #ffffff;
 }
 
-.btn-google svg {
-    height: 25px;
-    fill: #ffffff;
+.app-link span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 9px;
+    flex-wrap: wrap;
 }
-
-
-
 
 /*main*/
 
 .page-content-article {
     height: 250px;
     padding: 0 20px;
-
-    
 }
 
 .page-content-article.first {
@@ -187,6 +217,7 @@ h2 {
     font-size: 50px;
     line-height: 60px;
     margin-top: 24px;
+    margin-left: 21px;
 }
 
 .first-content-item-image {
@@ -202,6 +233,12 @@ h3 {
     line-height: 35px;
 }
 
+.article-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .article-number {
     color: #000000;
     text-transform: uppercase;
@@ -214,6 +251,43 @@ h3 {
     display: block;
     height: 215px;
     width: 320px;
+}
+
+/* Footer */
+
+.page-footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-image: url("../images/img/game_767.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.download-app {
+    margin-top: 99px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-icon {
+    display: flex;
+    align-items: center;
+    background: #5e42b0;
+    height: 72px;
+    width: 72px;
+
+    /* Поменять */
+    border-radius: 10px;
+}
+
+.app-icon svg{
+    margin: 0 auto;
+    fill: white;
+    height: 64%;
 }
 
 
